@@ -8,24 +8,24 @@
 - [O]  **1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?**
     
 
- 	#  단어를 입력 받는다.
+ 	##  단어를 입력 받는다.
         text = str(input(('입력값:  \n')))
 
-        #단어를 뒤집어서 출력한다.
+        ##단어를 뒤집어서 출력한다.
         def reverse_text(text):
 
-        # 텍스트의 길이를 구한다.
+        #### 텍스트의 길이를 구한다.
         text_len = len(text)
 
-  	# 텍스트 스트링를 리스트로 변환한다.
-  	# (스트링은 특정 인덱스의 텍스트 업데이트가 안됨)
+  	#### 텍스트 스트링를 리스트로 변환한다.
+  	##### (스트링은 특정 인덱스의 텍스트 업데이트가 안됨)
   	text_list = list(text)
 
-  	# 리스트를 뒤집는다.
+  	#### 리스트를 뒤집는다.
   	for i in range(int(text_len / 2)):
     	text_list[i], text_list[- (i + 1)] = text_list[- (i + 1)], text_list[i]
 
-  	# 리스트를 다시 스트링으로 변환
+  	#### 리스트를 다시 스트링으로 변환
   	reversed_text = ""
   	for c in text_list:
       	reversed_text += c
@@ -36,8 +36,8 @@
 
 	print("뒤집힌 단어는:", reversed_text)
 	
-       ```
-        # 뒤집은 단어가 원래의 단어와 같은지 여부를 출력한다.
+       
+        ## 뒤집은 단어가 원래의 단어와 같은지 여부를 출력한다.
    	if text.replace(' ','') == reversed_text.replace(' ',''):
   	  print("입력된 단어는 회문입니다.")
 	else:
