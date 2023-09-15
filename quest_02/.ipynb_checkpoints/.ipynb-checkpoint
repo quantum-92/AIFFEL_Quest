@@ -192,19 +192,19 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
+   "cell_type": "markdown",
    "metadata": {
     "id": "26wIsU7erxri"
    },
-   "outputs": [],
    "source": [
     "# 회고\n",
     "\n",
     "## Keep\n",
     "- 원하는 결과가 나왔다.\n",
+    "\n",
     "## Problem\n",
     "- 로직은 완전히 이해 못했다. 템플릿이 있어서 하다 보니 되었음.\n",
+    "\n",
     "## Try\n",
     "- 로직을 더 생각해 볼 것."
    ]
