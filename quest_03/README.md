@@ -1,11 +1,11 @@
-AIFFEL Campus Online Code Peer Review Templete
+# AIFFEL Campus Online Code Peer Review Templete
 
-코더 : 이혁희
-리뷰어 : 조필선
+- 코더 : 이혁희
+- 리뷰어 : 조필선
 
 
 
-PRT(Peer Review Template)
+## PRT(Peer Review Template)
 
 [X] 1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?
 
