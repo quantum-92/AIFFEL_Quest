@@ -9,6 +9,19 @@
 ## 메인퀘스트 1번 : Account
 1. 은행계좌의 생성, 입금, 출금, 100만원 넘는 계좌 정보 출력합니다.
 2. 마지막 셀에 다시 계좌를 생성하고 입출력을 반복한 후에 입금내역과 출금내역을 출력합니다.
+3. 입금 5회까지 이자가 지급되는 것을 보여주기 위해서 6번 입금하였습니다.
+   ```
+   # 입출금 반복. 
+   # 5회까지 이자가 지급되는 것을 확인하기 위하여 입금 6회 반복
+   a.deposit(500000)
+   a.withdraw(1000000)
+   a.deposit(100000)
+   a.deposit(100000)
+   a.deposit(100000)
+   a.deposit(100000)
+   a.deposit(100000)
+   a.withdraw(500000)
+   ```
 
 ## 메인퀘스트 2번 : Aiffel
 1. 순서대로 Aiffel, Aiffel_Guild, Aiffel_Group 클래스를 정의하고 필요한 테스트를 진행했습니다.
@@ -21,29 +34,36 @@
    ```
    a_group.aiffel_guild = a_guild
    ```
-6. 개체의 생성과 초기화는 다음 순서를 따릅니다.
+6. 프로그램의 실행은 다음 순서를 따릅니다.
 >1. Aiffel
->   ```
->   # Aiffel 개체 생성
->   aiffel = Aiffel()
->   # 딕셔너리로 grew 리스트를 받아 입력
->   aiffel.add_grews(grews)
->   ```
+>>  - 초기화
+>>   ```
+>>   # Aiffel 개체 생성
+>>   aiffel = Aiffel()
+>>   # 딕셔너리로 grew 리스트를 받아 입력
+>>   aiffel.add_grews(grews)
+>>   ```
+>>   - 그루에게 상벌점 주기
+>>   - 그루 2명 삭제
 >2. Aiffel_Guild
->   ```
->   # Aiffel_Guild 개체 생성
->   a_guild = Aiffel_Guild()
->   # 각 그루를 길드에 mapping
->   a_guild.map_guild()
->   ```
+>>   - 초기화
+>>   ```
+>>   # Aiffel_Guild 개체 생성
+>>   a_guild = Aiffel_Guild()
+>>   # 각 그루를 길드에 mapping
+>>   a_guild.map_guild()
+>>   ```
+>>   - 길드에게 상벌점 주기
 >3. Aiffel_Group
->   ```
->   # Aiffel_Group 개체 생성
->   a_group = Aiffel_Group()
->   # 각 그루에게 그룹을 매핑한다.
->   a_group.map_group()
->   # a_group.aiffel_guild 변수에 Aiffel_Guild개체(a_guild)를 assign한다.
->   # group2guild_score함수에서 a_guild.guild_score를 호출하기 위함.
->   a_group.aiffel_guild = a_guild
->   ```   
+>>   - 초기화
+>>   ```
+>>   # Aiffel_Group 개체 생성
+>>   a_group = Aiffel_Group()
+>>   # 각 그루에게 그룹을 매핑한다.
+>>   a_group.map_group()
+>>   # a_group.aiffel_guild 변수에 Aiffel_Guild개체(a_guild)를 assign한다.
+>>   # group2guild_score함수에서 a_guild.guild_score를 호출하기 위함.
+>>   a_group.aiffel_guild = a_guild
+>>   ```
+>>   - group2guild_score 실행
    
