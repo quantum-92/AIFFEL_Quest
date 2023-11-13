@@ -335,16 +335,18 @@ _________________________________________________________________
     - 같은 ResNet50이라도 V1과 V2의 테스트 성능이 확연히 달랐습니다.(50%대 : 85%)
 - 데이터의 퀄리티와 양이 중요하다.
     - 같은 ResNet50V2 기반으로 Transfer Learning을 하더라도 data augmentation을 했을 때 성능이 더 좋았습니다.
-    - 더 중요한 것은 후자 쪽의 loss/accuracy가 수렴하는 더 좋았다는 것입니다.(천천히 꾸준히 수렴)
+    - 더 중요한 것은 후자 쪽의 loss/accuracy가 수렴하는 모양이 더 좋았다는 것입니다.(천천히 꾸준히 수렴)
 - learning rate가 중요하다.
     - learning rate를 0.001로 했을 때보다 0.0001로 했을 때 수렴이 더 안정적이었습니다.
 
 ## [참고] run_prep.py
-- run_prep.py
 - 데이터 load/가공 등의 process와 성능 확인을 위한 함수 등을 모아 놓은 python 코드
 - 실행 방법
     - ```%run run_prep.py [data_aumentation_flag]```
-    - data_augmentation_flag : data augmentation을 할지 여부(augmentation은 이후 설명)
+    - data_augmentation_flag : data augmentation을 할지 여부
+- agument_image
+    - 원본 이미지에서  좌우 회전, 상하 회전, brightness, contrast 등을 조절한 이미지를 생성한다.
+    - 1장의 이미지로 4장의 이미지 추가 생성
 
 # 회고
 ## 잘한 점
