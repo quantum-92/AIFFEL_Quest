@@ -21,8 +21,10 @@ base_model = tf.keras.applications.resnet_v2.ResNet50V2(input_shape=IMG_SHAPE,
                                          include_top=False,
                                          weights='imagenet')
 ```
+
 ```
 VGG16, Resnet50v2 이용하여 base model 가져오고 
+```
 ```
 base_model.trainable = False
 
