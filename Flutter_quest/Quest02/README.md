@@ -4,8 +4,13 @@
 
 ![Alt text](image-1.webp)
 
-- Widget Tree를 다음과 같이 구성하였습니다.(코딩하는 과정에서 Button Widget위에 Align Widget 추가)
+- Widget Tree를 다음과 같이 구성하였습니다.(코딩하는 과정에서 Button 
+
+Widget위에 Align Widget 추가)
 ![Alt text](image.png)
+
+- 화면 구성 코드
+    - lib/main.dart
 
 ## 회고
 ### 잘한 점
